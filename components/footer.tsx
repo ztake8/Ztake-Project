@@ -7,6 +7,7 @@ const footerSections = [
     title: "Products",
     links: [
       { label: "Payment Gateway", href: "/payments" },
+      { label: "International Payments", href: "/international-payments" },
       { label: "Subscriptions", href: "/subscriptions" },
       { label: "ZtakeX Banking", href: "/ztakex" },
       { label: "Capital", href: "/capital" },
@@ -62,22 +63,13 @@ export function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-1 animate-fadeInUp">
             <Link href="/">
               <div className="inline-block cursor-pointer transform transition-all duration-300 hover:scale-105">
-                <div className="relative w-12 h-12 mb-4">
-                  <Image
-                    src="/images/design-mode/logo%20white.png"
-                    alt="Ztake"
-                    width={48}
-                    height={48}
-                    className="dark:hidden"
-                  />
-                  <Image
-                    src="/images/design-mode/logo-ztake.png"
-                    alt="Ztake"
-                    width={48}
-                    height={48}
-                    className="hidden dark:block"
-                  />
-                </div>
+                <img
+                  src="/ztake-logo.png"
+                  alt="Ztake"
+                  width={64}
+                  height={64}
+                  className="w-16 h-16 mb-4"
+                />
               </div>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">Empowering modern businesses to get paid instantly.</p>

@@ -31,9 +31,9 @@ export function Navbar() {
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300">
               <img
-                src={theme === "dark" ? "/ztake-logo-dark.png" : "/ztake-logo-light.png"}
+                src="/ztake-logo.png"
                 alt="Ztake Logo"
-                className="h-8 w-auto select-none"
+                className="h-10 w-auto select-none"
               />
               <span className="text-xs sm:text-sm text-foreground inline font-black">ZTAKE</span>
             </div>
@@ -68,7 +68,7 @@ export function Navbar() {
           <div className="flex items-center space-x-3">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-[16px] backdrop-blur-[20px] bg-white/30 dark:bg-white/8 hover:bg-white/40 dark:hover:bg-white/12 transition-all duration-300 shadow-sm dark:shadow-md hover:scale-[1.05] active:scale-[0.95]"
+              className="p-2 rounded-[16px] backdrop-blur-[20px] bg-white/30 dark:bg-white/8 hover:bg-white/40 dark:hover:bg-white/12 transition-all duration-300 shadow-sm dark:shadow-md"
               aria-label="Toggle theme"
             >
               {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
@@ -136,11 +136,11 @@ export function Navbar() {
             <div className="flex flex-col space-y-2 pt-2">
               <Link href="/contact">
                 <div className={cn(
-                  "block px-4 py-3 rounded-[24px] text-sm font-medium cursor-pointer transition-all duration-300",
-                  "border-2 border-white/20 dark:border-white/10 bg-white/30 dark:bg-white/8",
+                  "block px-4 py-3 rounded-[24px] text-sm font-medium cursor-pointer transition-all duration-300 text-center",
+                  "border-2 border-white/20 dark:border-white/10 dark:bg-white/8 bg-input",
                   "hover:bg-white/40 dark:hover:bg-white/12 hover:scale-105 active:scale-95"
                 )}>
-                  Contact Sales
+                  Contact 
                 </div>
               </Link>
               <a href="https://ztake.in/login">
