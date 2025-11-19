@@ -55,6 +55,7 @@ export default function Contact() {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
+      countryCode: selectedCountry.code,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };

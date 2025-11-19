@@ -140,7 +140,7 @@ export default function Home() {
               title="International Payments"
               description="Accept payments in 140+ currencies from customers worldwide"
               features={["Multi-currency processing", "Competitive FX rates", "Local payment methods"]}
-              href="/payments/international"
+              href="/international-payments"
             />
           </div>
         </div>

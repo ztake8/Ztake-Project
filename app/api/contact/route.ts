@@ -5,7 +5,7 @@ export const runtime = "nodejs"; // REQUIRED for nodemailer
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, subject, message } = await req.json();
+    const { name, email, phone, countryCode, subject, message } = await req.json();
 
     const transporter = nodemailer.createTransport({
       host: "smtp.zoho.in",
@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
         <h2>New Message</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${countryCode || "+91"} ${phone}</p>
         <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong><br/>${message}</p>
       `,
